@@ -1,0 +1,24 @@
+<?xml version="1.0"?> 
+<hello>
+  <forth attr1="hello" attr2="987" >
+    aosidfjaoirgaeproktpaertpo
+    <comment attr1="comment's attribute" attr2="654" >
+      0 [IF]
+         I owe thanks to:
+            Les Kendall, Chris Jakeman, Jenny Brien
+         for help and inspiration.
+      [THEN]
+    </comment>
+    <colon attr1="colon's attribute" attr2="321" >
+        .&quot; Hello, XML!&quot; ;
+      : <name>helloXML</name> <stack>( -- )</stack>
+    </colon>
+    <colon attr1="colon's attribute" attr2="321" >
+        .&quot; Hello, Forth!&quot; ;
+      : <name>helloForth</name> <stack>( -- )</stack>
+    </colon>
+    <colon attr1="sdlfigjsldkfjg" attr2="5100" />
+    <run>greetings</run>
+    
+  </forth>
+</hello>

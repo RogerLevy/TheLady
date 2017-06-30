@@ -1,0 +1,10 @@
+
+\ parenting works differently than Flash
+\  parenting does "cascade" certain properties - visibility, enabled
+\    this is done by using separate code paths for actors that are children (have parents)
+\  but it doesn't control priority - objects are rendered in the normal order
+\  transformations can be inherited but it's not mandatory
+\  in this way objects can be "grouped" without being attached to each other (leaving
+\  the possibility for manual or physics-based attachment), or you can attach them using the engine
+\  such that hitbox fetches and entity display follow the parent's transform info recursively...
+\    so it's a bit slow, but it's more flexible.

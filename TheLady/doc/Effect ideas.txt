@@ -1,0 +1,9 @@
+
+Blur
+Pulse
+Solarize
+Disintegrate (pixels out of place)
+Burn (from AS3 effect)
+TV interference
+Mosaic
+H/V waves

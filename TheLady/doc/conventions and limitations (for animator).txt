@@ -1,0 +1,5 @@
+ I'm not ready to come up with requirements on everything yet.  If I can have until next week to get those levels playable with placeholders and play around with some ideas then I'll feel less rushed and more inspired.
+ 
+ 
+I made a size guide png, in the dropbox's SPRITER folder, which I've been using.  I think that should help him to visualize the screen.  I place it at -1025,-577 so that the center of it is at 0,0.  It's really important to work to the right scale.  Also he has to know he can't use any bones, our engine does not support it and might never for this project.
+

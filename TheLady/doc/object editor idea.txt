@@ -1,0 +1,16 @@
+object editor
+   set hitbox with mouse
+   set pivot with mouse
+   set rotation with mouse (slider)
+   set scale with mouse    (slider)
+   set z                   (slider)
+   set tint                (rgba sliders)
+
+   select animations to play
+   drag around with mouse, display position
+   enable/disable (don't hide)
+   display available commands (all words defined in file for entity's prototype)
+   display essential data like hp
+
+   save code
+   

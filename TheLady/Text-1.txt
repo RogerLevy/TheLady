@@ -1,0 +1,9 @@
+it would be great if i could visually explore and experiment with my tools (Forth words)
+
+to be able to classify (with color coding) word types
+   such as:
+      constants
+      values
+      variables
+      actor states
+      

@@ -1,0 +1,59 @@
+integrate layout editor
+   UI for manipulating display transforms
+      scale, tint, rotation
+   edit prototypes visually
+      priority
+      Z
+      display transform
+
+heirearchical object tree
+   viewport
+      camera
+         game
+         UI stuff
+
+   the principle here is a simple flexible system that solves a domain of similar problems
+
+
+integrated prompt
+
+all entities should be actors?
+
+automated data importing
+   automatic ANIMATION creation from SCML files 
+
+
+more vtables for example one that includes words like:
+   PLAY STOP REWIND SEEK PLAYHEAD SPEED! SPEED@
+   
+
+
+start over in certain areas
+   entities
+      more abstraction, less direct access
+      access to DSPT should be more transparent
+      reduce the need to think about things
+   actors
+      might be combined into entities anyway
+      some utilities should be simpler to use
+      
+   engine
+   deployment
+
+
+strengths that made previous systems easier to use
+
+   more thoughtfulness
+      example - sound handles
+         a special VALUE could automatically set SND
+         it could be a special VALUE-style field, transparently.
+
+
+which allof etc -> more generalized (for things other than actors)
+
+improve how layouts work - like multiple layouts, how does that work (ability to select which one to save? save all of them?)
+
+more advanced sound management - like sounds that persist
+   and are multiple streams possible?!?!
+   
+selecting all of a parent type including those of its descendents

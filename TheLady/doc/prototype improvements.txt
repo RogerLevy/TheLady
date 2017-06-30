@@ -1,0 +1,32 @@
+more convenient prototype development and testing
+
+
+arsenal:
+
+pstruct
+~>
+fields
+var and friends
+endp
+s! => ->
+be { ( } )
+reopen
+
+
+things we might want to do
+
+change words
+   
+change vtables
+   
+
+change vars of instances
+   s!
+   {
+   (etc.)
+
+change the prototype and make new instances
+   replace another instance so there's only one
+   replace all other instances on the stage???
+
+create, manipulate and test multiple stages

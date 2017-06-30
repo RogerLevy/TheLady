@@ -1,0 +1,34 @@
+Level 1 requirements
+    [ ] Scrolling (tiled) background
+    [ ] Doors
+    [ ] THe Lady (obviously)
+    [ ] Large head / Barb wire (separate entities, probably both controlled by the large head)
+    [ ] Falling Glass
+    [ ] Glass overlay
+
+
+
+Maze capabilities (can be added to by entity scripts - local wordsets too?)
+    Instantiate entities
+        Access to game entity prototypes    
+        Parameters and effects (entity's local wordset available between brackets?)
+        Attach interaction callback events (for example make doors lead to other rooms)
+        
+    Travel
+        Load level
+        Reload current level
+        Goto specific room x/y 
+        Goto specific room #
+        Goto specific level # / room x/y
+        Go UDLR  (mod level length)
+                
+        
+    Music/Ambience
+        Fade in/out
+        Crossfade to streaming music
+        Play streaming music (hard cut)
+        Overlay streaming music
+        Clear streaming music
+        Initiate "Sound programs" (randomly triggered noises for example - maybe do it with entity scripts?)
+        
+    

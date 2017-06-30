@@ -1,0 +1,15 @@
+array: name      values , values , values , ;
+
+data / xt couplets
+   
+
+   data , xt ,
+      data [[ ]] callback 2!
+      callback 2@ execute
+      
+      
+EVENTS
+   step
+   draw
+   whatever
+   parent prototype's whatever

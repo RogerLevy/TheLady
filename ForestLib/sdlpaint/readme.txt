@@ -1,0 +1,1 @@
+A modular configurable interface for graphics editing tools.  Edits SDL images.

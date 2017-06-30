@@ -1,0 +1,16 @@
+[layout l4layout
+10948 , 1177 , %crucifixion , .. , 
+5998 , 1187 , %stakehead , f.. , 
+3480 , 1219 , %crucifixion , .. , 
+5546 , 1384 , %stakehead , .. , 
+2266 , 1214 , %stakehead , .. , 
+-2210 , 1187 , %bladewall , .. , 
+8685 , 1279 , %crucifixion , f.. , 
+3251 , 1434 , %stakehead , .. , 
+3967 , 1298 , %stakehead , f.. , 
+13011 , 1167 , %purplestakehead , .. , 
+-18270 , 1279 , %purplestakehead , .. , 
+24361 , 1152 , %angel , .. , 
+20209 , 1164 , %purplestakehead , .. , 
+30069 , 1279 , %purplestakehead , .. , 
+layout]

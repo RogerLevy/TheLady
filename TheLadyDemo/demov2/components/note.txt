@@ -1,0 +1,13 @@
+Components are distinguished here because these files don't necessarily use any entities,
+or they may contain several ones.  Entities and scripts rely on them - in contrast, entities do not
+rely on each other, relying on actions, the stage, collision flags etc etc to interact.
+
+Practically, if entities want to "know" about each other's prototypes, that should be a separate file
+laid on top of the parties, and the loader for that file should be localized in the chapter loader.
+
+Here's how to regard each:
+Components are "common but optional to builds",
+entities are "isolated",
+and the other code on top (high level script) is "special".
+
+A big reason for this is the ability to load and test bits and pieces interactively.

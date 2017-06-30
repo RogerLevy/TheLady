@@ -1,0 +1,18 @@
+{
+  "insertOutput": 0, 
+  "parseRegex": "", 
+  "name": "F5_-_Run_Session_File", 
+  "keyboard_shortcut": "F5", 
+  "operateOnSelection": 0, 
+  "value": [
+    "sf session.f"
+  ], 
+  "cwd": "%p", 
+  "version": "1.0.12", 
+  "env": "", 
+  "doNotOpenOutputWindow": 0, 
+  "showParsedOutputList": 0, 
+  "type": "command", 
+  "parseOutput": 0, 
+  "runIn": "no-console"
+}

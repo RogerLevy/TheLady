@@ -1,0 +1,9 @@
+   : angelbladewall:post   /sfx post ?vol hitplayer @ ?exit ?killplayer ;   
+   \ void setupPost() {
+   \    initSFX();
+   \    setPost( void () {
+   \       updateVolume();
+   \       if ( hitplayer ) return;
+   \       qKillPlayer();
+   \    } )
+   \ }

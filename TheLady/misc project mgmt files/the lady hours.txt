@@ -1,0 +1,13 @@
+week of 11/4
+  2 - Discussions
+  3 - Create project and repository, import placeholder files
+  2 - Spriter research
+(did some reorganization and consolidation of my engine code)
+
+week of 11/11
+  2 - Reorganize project files a bit, get placeholder images loading and displaying
+  4 - Engine work
+  .5 - Some Trello stuff
+  1 - Watch Spriter tutorials
+  .5 - Engine work
+  

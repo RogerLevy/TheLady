@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="2e513d17-e616-46c6-9032-911b30455396" kpf_version="5" name="RlevyToolbelt_2.komodoproject">
+<preference-set idref="2e513d17-e616-46c6-9032-911b30455396">
+  <boolean id="dedentOnColon">0</boolean>
+  <string id="editAutoIndentStyle">smart</string>
+  <boolean id="editBackspaceDedents">1</boolean>
+  <boolean id="editElectricBrace">1</boolean>
+  <string id="import_dirname">C:\Users\Roger\Documents\Dropbox\_GAMEDEV\GAMEDEV_140603\RogerForthLib\rlevy-toolbelt\</string>
+  <string id="import_exclude_matches">*.*~;*.bak;*.tmp;CVS;.#*;*.pyo;*.pyc;.svn;_svn;.git;.hg;.bzr;*%25*;tmp*.html;.DS_Store;*.swp;*.kpf;*.komodoproject;.komodotools;__pycache__</string>
+  <string id="import_include_matches"></string>
+  <boolean id="indentStringsAfterParens">0</boolean>
+  <long id="indentWidth">4</long>
+  <boolean id="showIndentationGuides">1</boolean>
+  <long id="tabWidth">4</long>
+  <boolean id="useSmartTabs">0</boolean>
+  <boolean id="useTabs">0</boolean>
+</preference-set>
+</project>

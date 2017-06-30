@@ -1,0 +1,99 @@
+\ --------------------------------------------------------------------------------
+\ main loop
+
+
+
+
+defer ok
+0e fvalue framedelta   \ time of last frame in seconds
+1e 60e f/ fvalue 60hz
+
+: poll   poll-mouse poll-joysticks poll-keyboard poll-generic-inputs ;
+
+: fs?   display al_get_display_flags ALLEGRO_FULLSCREEN_WINDOW and 0<> ;
+
+: displaywh   display al_get_display_width display al_get_display_height ;
+
+: w/f
+   display ALLEGRO_FULLSCREEN_WINDOW fs? not al_toggle_display_flag 0= abort" could not switch to fullscreen"
+   \ display ALLEGRO_WINDOWED fs? not al_toggle_display_flag drop
+   \ display ALLEGRO_NOFRAME 0 al_toggle_display_flag drop
+   \ show-frame show-frame
+   \ 100 ms
+   \ display ALLEGRO_NOFRAME 1 al_toggle_display_flag drop
+   ;
+   
+: ?w/f   <enter> kpressed alt? and if w/f then ;
+
+: ?f
+   <f> kpressed -exit
+   display al_get_display_flags ALLEGRO_NOFRAME and 0<> not
+   display ALLEGRO_NOFRAME rot al_toggle_display_flag drop
+   display 0 0 al_set_window_position
+   ;
+
+
+\ : frame   [[ poll sim render frames ++ ]] exectime drop
+\    16.66666e fto framedelta ; \ dup . s>f 0.001e f*   fto framedelta ;
+
+16.66666e fto framedelta
+
+\ : frame(s)   frame show-frame update-sounds ?w/f ?f ;
+
+variable allowinput allowinput on
+
+: tick   allowinput @ if poll then sim ?w/f ; \ ?f ;
+
+
+create e 256 allot
+
+variable needredraw
+
+: frame(s)
+   eventq e al_wait_for_event
+   e @ case
+      ALLEGRO_EVENT_TIMER of tick needredraw on endof
+   endcase
+   eventq al_is_event_queue_empty needredraw @ and if
+      render show-frame needredraw off update-sounds 
+   then
+;
+
+variable running
+
+\ this is the main loop
+: dev-ok
+   \ [[
+      running on
+      >gfx +timer begin   
+         pause .stack frame(s) <escape> kreleased
+      until
+   \ ]] catch
+         -timer >ide
+         running off
+   ; \   throw ;
+
+: dev?   ['] ok >body @ ['] dev-ok = ; 
+
+\ this is for the runtime - different exit key combo (alt-f4)
+: release-ok
+   [[
+      running on
+      >gfx +timer begin
+         frame(s) <f4> kpressed alt? and
+      until
+   ]] catch
+         -timer >ide
+         running off
+      throw ;
+
+' dev-ok is ok
+
+
+: ?ok  running @ ?exit ok ;
+
+: freezefor  dev? allowinput ! poll +timer for frame(s)
+   dev? <enter> kpressed and if r> drop -timer allowinput on exit then
+   next -timer allowinput on ;
+
+: ?bye    dev? not if bye else -1 abort" Intentional program termination." then ;

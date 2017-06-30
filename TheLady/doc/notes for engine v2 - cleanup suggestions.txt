@@ -1,0 +1,53 @@
+just getting it to work is not enough
+it has to end up being beautiful
+it will save you time and frustration
+giving lotsa things a name is actually a good thing
+
+
+private prototype wordset proposal:
+   
+   \ as a FACTORING TOOL.
+   [I
+   : cf ;
+   : wl ;
+   : stuf ;
+   I]
+   
+   INNARDS ( prototype -- )   \ opens wordset for debugging ... only one at a time.  does not alter CURRENT
+      CANNOT BE USED IN ANOTHER PROTOTYPE!!!! EVER!!!
+
+
+
+displayobject -> particles
+              -> actor
+              
+keep actors on the stage
+
+
+
+
+
+layouts
+
+
+
+prototypes
+   move oninit, ondraw etc to vtables as these things do not and should not change on the life of an entity
+   
+
+
+
+
+
+commandline working lexicon - internally use ?p etc 
+   at   picked   
+
+general purpose
+   any   
+   allof   
+   execs
+   \ some new ones... for counted stack on the stack.
+   : swap-    ( ... n -- ... n-1 item )      1 - swap ;
+   : swap+    ( ... n item -- ... item n+1 ) swap 1 + ;
+   
+

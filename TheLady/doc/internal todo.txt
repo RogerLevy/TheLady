@@ -1,0 +1,12 @@
+[x] vtable
+[x] convenient scripts -> cleanup level 1
+[ ] package improvements
+
+sucks to have to say settings: all the time before behavior:
+actually it sucks to have to say settings: at all
+it'd also be quite nice if it worked even when simply working on individual objects rather than prototypes
+
+wishlist
+[ ] framerate independence and slowdown
+[ ] return-stack preservation for actor scripts
+[ ] 
